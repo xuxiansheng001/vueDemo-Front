@@ -1,0 +1,62 @@
+/* Global Dark-Tech theme override */
+html,body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* 去除滚动条 */
+  background: #0d0d0d;
+  font-family: 'Microsoft YaHei', Inter, Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #e6f7ff;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 链接默认颜色 */
+a {
+  color: #00d2ff;
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
