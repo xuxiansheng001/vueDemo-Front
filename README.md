@@ -101,3 +101,5 @@ npm run build
 - 🚀 CI/CD：GitHub Actions + Docker + Nginx
 
 欢迎基于本模板进行二次开发！
+# vueDemo-Front
+practice
